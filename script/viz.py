@@ -30,6 +30,6 @@ def plot_decision_boundary(model, train_set, test_set, sv=None):
     plt.scatter(X_test[:,0], X_test[:,1], c=Y_test, alpha=0.6)
     
     if sv is not None:
-      plt.scatter(sv[:, 0], sv[:, 1], c="blue",  edgecolor='white')
+      plt.scatter(sv[:, 0], sv[:, 1], facecolors="none", edgecolor='white', s=100)
 
     plt.show()
